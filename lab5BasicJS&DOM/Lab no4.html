@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function countTheWord(str){
+            var i;
+            var count = 0;
+            var words = str.split(" "); // แยกข้อความเป็นคำโดยใช้ช่องว่างเป็นตัวแยก
+
+            for (i = 0; i < words.length; i++) {
+                if (words[i].toLowerCase() == "the") { // เปรียบเทียบคำโดยไม่สนใจตัวเล็ก-ใหญ่
+                    count++;
+                }
+            }
+
+            var message = "This page says:\nมี The ทั้งหมด " + count + " คำ\nPrevent this page from creating additional dialogs.";
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    The eighth ruler of the fifth Dynasty in the late 25th century.<br><br>
+    <a href="#" onclick="countTheWord('The eighth ruler of the fifth Dynasty in the late 25th century.')">Click for count 'the'</a>
+</body>
+</html>
