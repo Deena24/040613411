@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form-echo.php" method="get">
+        <h4>1.ชื่อเต็ม/ย่อของสาขาวิชา</h4>
+        <input type="text" name="major" placeholder="CS/Computer Science" pattern="[A-Za-z\s]+">
+
+        <h4>2.จำนวนเงินที่จะโอน</h4>
+        <input type="text" name="transfer" pattern="[0-9]+">
+
+        <h4>3.อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย<h4>
+        <p>1. <input type="text" name="food1" pattern="[ก-๏]+"></p>
+        <p>2. <input type="text" name="food2" pattern="[ก-๏]+"></p>
+        <p>3. <input type="text" name="food3" pattern="[ก-๏]+"></p>
+        <p>4. <input type="text" name="food4" pattern="[ก-๏]+"></p>
+        <p>5. <input type="text" name="food5" pattern="[ก-๏]+"></p>
+
+        <h4>4.ค่าไฟฟ้า 3 เดือนที่ผ่านมา</h4>
+        <input type="number" name="bill">
+
+        <h4>5.รหัสบัตรประชาชน</h4>
+        <input type="text" name="ID card" placeholder="X-XXXX-XXXXX-XX-X" pattern="[0-9]{1}[\-][0-9]{4}[\-][0-9]{5}[\-][0-9]{2}[\-][0-9]{1}">
+
+        <h4>6.ความพึงพอใจของหนังสือเล่มนี้</h4>
+        <input type="radio" name="book" value="Excellent"/>มากที่สุด
+        <input type="radio" name="book" value="Very Good"/>มาก 
+        <input type="radio" name="book" value="Fair"/>ปานกลาง
+        <input type="radio" name="book" value="Poor"/>น้อย
+        <input type="radio" name="book" value="Very Poor"/>น้อยที่สุด 
+
+        <h4>7.อาการป่วย</h4>
+        <textarea name="condition" cols="45" rows="5"></textarea>   
+
+        <h4>8.ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</h4>
+        <input type="radio" name="vaccine" value="ํYes"/>เคย
+        <input type="radio" name="vaccine" value="No"/>ไม่เคย
+
+        <h4>9.รหัสผ่าน</h4>
+        <input type="password" name="password" minlength="8">
+
+        <h4>10.เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</h4>
+        <p>เริ่ม <input type="time" name="start"> สิ้นสุด<input type="time" name="end"></p>
+
+        <h4>11.วันเวลาที่ต้องไปพบแพทย์</h4>
+        <input type="datetime-local" name="doctor">
+
+        <br>
+        <p><input type="submit" value="submit"></p>
+    </form>
+</body>
+</html>

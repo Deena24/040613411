@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script>
+        function changecolor() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var bday = document.getElementById("bday").value;
+
+            if (name !== "") {
+                document.getElementById("name").style.color = "green";
+            }
+            if (age !== "") {
+                document.getElementById("age").style.color = "green";
+            }
+            if (bday.value !== "") {
+                document.getElementById("bday").style.color = "green";
+            }
+        };
+    </script>
+</head>
+<body>
+    Name: <input type="text" id="name" size="25" onblur="changecolor()"><br>
+    Age: <input type="text" id="age" size="8" onblur="changecolor()"><br>
+    Birthdate: <input type="text" id="bday" size="16" onblur="changecolor()">
+</body>
+</html>

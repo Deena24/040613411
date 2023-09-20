@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-style: groove;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>HTML Form Exercise</title>
+</head>
+
+<body>
+    <h1>เข้าสู่ระบบ</h1>
+    <form action=login.html>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" autofocus required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">กรุณาพิมพ์ตามตัวเลขที่ปรากฎ: <br>1559 <br>
+                    <input type="text" name="code" pattern="1559" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button>
+            <img src="https://w7.pngwing.com/pngs/203/692/png-transparent-login-computer-icons-login-s-blue-text-trademark.png"
+                alt="buttonpng" width=90px height=60px>
+        </button>
+        
+    </form>
+</body>
+
+</html>
